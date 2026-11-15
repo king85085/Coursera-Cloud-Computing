@@ -46,7 +46,7 @@ if [ "$INSTANCEIDS" != "" ]
   then
     aws ec2 terminate-instances --instance-ids $INSTANCEIDS > /dev/null
     echo "Waiting for all instances report state as TERMINATED..."
-    aws ec2 wait instance-terminated --instances-ids $INSTANCEIDS
+    aws ec2 wait instance-terminated --instance-ids $INSTANCEIDS
     echo "Finished destroying instances..."
   else
     echo 'There are no running values in $INSTANCEIDS to be terminated...'

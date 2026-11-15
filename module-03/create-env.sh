@@ -30,7 +30,7 @@ echo $VPCID
 
 echo "Finding and storing the subnet IDs for defined in arguments.txt Availability Zone 1 and 2..."
 SUBNET2A=$(aws ec2 describe-subnets --output=text --query='Subnets[*].SubnetId' --filters "Name=availability-zone,Values=${10}" "Name=vpc-id, Values=$VPCID")
-SUBNET2B=$(aws ec2 describe-subnets --output=text --query='Subnets[*].SubnetId' --filters "Name=availability-zone,Values=${11}" "Name=vpc-id, Values=$VPCIS")
+SUBNET2B=$(aws ec2 describe-subnets --output=text --query='Subnets[*].SubnetId' --filters "Name=availability-zone,Values=${11}" "Name=vpc-id, Values=$VPCID")
 echo $SUBNET2A
 echo $SUBNET2B
 

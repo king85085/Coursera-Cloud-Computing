@@ -5,7 +5,7 @@
 # Remember to set you default output to text in the aws config command
 ##############################################################################
 
-echo "Beginning destroy script for module-03 assessment..."
+echo "Beginning destroy script for module-03 assessment..."  
 
 # Collect Instance IDs
 # https://stackoverflow.com/questions/31744316/aws-cli-filter-or-logic
@@ -14,7 +14,7 @@ echo "List of INSTANCEIDS to deregister..."
 if [ "$INSTANCEIDS" == "" ];
   then
   echo "There are no INSTANCEIDS to echo..."
-else
+else 
   echo $INSTANCEIDS
 fi 
 

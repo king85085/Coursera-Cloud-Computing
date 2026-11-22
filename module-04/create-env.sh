@@ -25,7 +25,7 @@
 # 16 ASG desired
 # 17 AWS Region for LaunchTemplate (use your default region)
 ##############################################################################
-
+export AWS_PAGER=""
 ltconfigfile="./config.json"
 
 if [ $# = 0 ]
